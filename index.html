@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--JQUERY-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <br>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">Employees</h1>
+    </div>
+    <div class="row">
+      <!-- Sign-Up Card-->
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            Add Employee
+          </div>
+          <div class="card-body">
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form" name="form">
+              <div class="form-group">
+                <label for="name-input">Employee Name:</label>
+                <input class="form-control" id="name-input" type="text" required>
+              </div>
+              <div class="form-group">
+                <label for="title-input">Role:</label>
+                <input class="form-control" id="title-input" type="text" required>
+              </div>
+              <div class="form-group">
+                <label for="startDate-input">Start Date:</label>
+                <input class="form-control" id="startDate-input" type="date" required>
+              </div>
+              <div class="form-group">
+                <label for="pay-input">Monthly Rate:</label>
+                <input class="form-control" id="pay-input" type="number" required>
+              </div>
+              <button class="btn btn-default" for="form" id="add-user" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Most Recent Member Card -->
+      <div class="col-lg-6" id="employees">
+      </div>
+    </div>
+  </div>
+  <!-- MomentJS -->
+  <script src="moment.js"></script>
+  <script src="preciseDif.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- LINKS FOR FIREBASE GO HERE -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
+</body>
+</html>
